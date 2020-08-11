@@ -30,7 +30,6 @@ function generateUrl(github, title) {
    [Installation]
    [Usage]
    [License]
-   [Contributing]
    [Tests]
 
   Installation
