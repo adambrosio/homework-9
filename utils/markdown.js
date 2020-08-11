@@ -32,19 +32,11 @@ function generateProjectUrl(github, title) {
    [License]
    [Contributing]
    [Tests]
-   [Questions]
 
   Installation
   To install necessary dependencies, run the following command:
   
   ${data.installation}
-  
-  Usage
-  ${data.usage}
-  ${renderSection(data.license)}
-    
-  Contributing
-  ${data.contributing}
 
   Tests
   To run tests, run the following command:
