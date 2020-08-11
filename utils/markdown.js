@@ -1,11 +1,11 @@
-function generateProjectUrl(github, title) {
+function generateUrl(github, title) {
     const kebabCaseTitle = title.toLowerCase().split(" ").join("-");
     return `https://github.com/${github}/${kebabCaseTitle}`;
   }
   
   function renderBadge(license, github, title) {
     if (license !== "None") {
-      return `[![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)](${generateProjectUrl(github, title)})`
+      return `[![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)](${generateUrl(github, title)})`
     }
     return ''
   }
