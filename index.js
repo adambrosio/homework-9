@@ -1,7 +1,7 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const path = require("path");
-const API = require("./utils/api");
+const API = require("./utils/API");
 const markdown = require("./utils/markdown");
 
 const questions = [
