@@ -1,8 +1,10 @@
 function generateUrl(github, title) {
+    // hypen seperated case convention
     const kebabCaseTitle = title.toLowerCase().split(" ").join("-");
     return `https://github.com/${github}/${kebabCaseTitle}`;
   }
   
+  // renderBadge function creates url for license chosen by user input
   function renderBadge(license, github, title) {
     if (license !== "None") {
       return `[![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)](${generateUrl(github, title)})`
@@ -20,6 +22,7 @@ function generateUrl(github, title) {
     return ''
   }
   
+  // markdown function actually will generate readme
   function markdown(data) {
     return `
    Title: ${data.title}
