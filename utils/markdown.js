@@ -22,9 +22,9 @@ function generateUrl(github, title) {
   
   function markdown(data) {
     return `
-  ${data.title}
+   Title: ${data.title}
   ${renderBadge(data.license, data.github, data.title)}
-   Description
+   Description:
   ${data.description}
    Table of Contents 
    [Installation]
@@ -32,11 +32,11 @@ function generateUrl(github, title) {
    [License]
    [Tests]
 
-  Installation
+  Installation:
   To install necessary dependencies, run the following command:
   ${data.installation}
 
-  Tests
+  Tests:
   To run tests, run the following command:
   ${data.test}
   `;
