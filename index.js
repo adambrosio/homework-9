@@ -13,12 +13,12 @@ const questions = [
     {
       type: "input",
       name: "title",
-      message: "What is your project's name?"
+      message: "What is the name of your project?"
     },
     {
       type: "input",
       name: "description",
-      message: "Please write a short description of your project"
+      message: "Please provide a description of your project"
     },
     {
       type: "list",
@@ -37,15 +37,23 @@ const questions = [
       name: "test",
       message: "What command should be run to run tests?",
       default: "npm test"
-    },
-    {
-      type: "input",
-      name: "usage",
-      message: "What does the user need to know about using the repo?",
-    },
-    {
-      type: "input",
-      name: "contributing",
-      message: "What does the user need to know about contributing to the repo?",
     }
   ];
+
+  const writeToFile = (file, data) => {
+      return fs.writeFileSync(path.join(process.cwd(), file), data);
+  }
+
+  const init = () => {
+    inquirer.prompt(questions)
+    .then((repsonses) => {
+        console.log("Searching for profile..");
+
+    API.getUser(responses.github)
+    .then(({ data }) => {
+        writeToFile("README.md", markdown({ ...responses, ...data}))
+    })
+      })
+  }
+
+  init();
