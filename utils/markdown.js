@@ -3,27 +3,27 @@ function generateProjectUrl(github, title) {
     return `https://github.com/${github}/${kebabCaseTitle}`;
   }
   
-  function renderLicenseBadge(license, github, title) {
+  function renderBadge(license, github, title) {
     if (license !== "None") {
       return `[![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)](${generateProjectUrl(github, title)})`
     }
     return ''
   }
   
-  function renderLicenseSection(license) {
+  function renderSection(license) {
     if (license !== "None") {
       return (
-        `## License
+        `License
   This project is licensed under the ${license} license.`
       )
     }
     return ''
   }
   
-  function generateMarkdown(data) {
+  function markdown(data) {
     return `
-  # ${data.title}
-  ${renderLicenseBadge(data.license, data.github, data.title)}
+  ${data.title}
+  ${renderBadge(data.license, data.github, data.title)}
    Description
   ${data.description}
    Table of Contents 
@@ -38,13 +38,13 @@ function generateProjectUrl(github, title) {
   \`\`\`
   ${data.installation}
   \`\`\`
-  ## Usage
+  Usage
   ${data.usage}
-  ${renderLicenseSection(data.license)}
+  ${renderSection(data.license)}
     
-  ## Contributing
+  Contributing
   ${data.contributing}
-  ## Tests
+  Tests
   To run tests, run the following command:
   \`\`\`
   ${data.test}

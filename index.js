@@ -46,7 +46,7 @@ const questions = [
 
   const init = () => {
     inquirer.prompt(questions)
-    .then((repsonses) => {
+    .then((responses) => {
         console.log("Searching for profile..");
 
     API.getUser(responses.github)
