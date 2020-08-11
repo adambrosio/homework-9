@@ -35,7 +35,6 @@ function generateProjectUrl(github, title) {
 
   Installation
   To install necessary dependencies, run the following command:
-  
   ${data.installation}
 
   Tests
