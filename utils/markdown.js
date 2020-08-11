@@ -33,7 +33,7 @@ function generateProjectUrl(github, title) {
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
-  ## Installation
+  Installation
   To install necessary dependencies, run the following command:
   \`\`\`
   ${data.installation}
