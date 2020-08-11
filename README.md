@@ -1,8 +1,8 @@
 
-  Test Project
+  Test
   
    Description
-  Test description
+  Test
    Table of Contents 
    [Installation]
    [Usage]
