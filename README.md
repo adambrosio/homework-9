@@ -1,8 +1,8 @@
 
-  # homework-1
-  [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/adambrosio/homework-1)
+  test
+  [![GitHub license](https://img.shields.io/badge/license-APACHE 2.0-blue.svg)](https://github.com/adambrosio/test)
    Description
-  asdasd
+  test
    Table of Contents 
   * [Installation](#installation)
   * [Usage](#usage)
@@ -10,19 +10,19 @@
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
-  ## Installation
+  Installation
   To install necessary dependencies, run the following command:
   ```
   npm i
   ```
-  ## Usage
+  Usage
   undefined
-  ## License
-  This project is licensed under the MIT license.
+  License
+  This project is licensed under the APACHE 2.0 license.
     
-  ## Contributing
+  Contributing
   undefined
-  ## Tests
+  Tests
   To run tests, run the following command:
   ```
   npm test
