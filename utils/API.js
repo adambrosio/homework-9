@@ -10,6 +10,7 @@ const API = {
             }&client_secret=${process.env.CLIENT_SECRET}`)
         .catch(error => {
             console.log("User not found");
+            // Uncaught exception status code
             process.exit(1);
         })
     }
